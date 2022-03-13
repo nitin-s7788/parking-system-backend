@@ -1,7 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 
-import CarsInfo from '../models/CarsInfo';
+import CarsInfo from '../models/CarsInfo.js';
 
 const router = express.Router();
 
@@ -46,7 +46,7 @@ export const createCar = async (req, res) => {
     }
 }
 
-export const updatePost = async (req, res) => {
+export const updateCar = async (req, res) => {
 
     
     // if (!req.userId) {
