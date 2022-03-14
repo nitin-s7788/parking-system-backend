@@ -8,8 +8,8 @@ const router = express.Router();
 
 router.get('/', getCars);
 router.get('/:id', getCar);
-router.post('/', createCar);
-router.patch('/:id', updateCar);
+router.post('/', createCar);    
+router.patch('/:id', updateCar);      // this is not working properly
 router.delete('/:id', deleteCar);
 
 

@@ -62,7 +62,7 @@ export const updateCar = async (req, res) => {
 
     // const updatedPost = { ...oldPost, creator : creator, title : title, message : message, tags : tags, selectedFile : selectedFile };  this does not work correctly
 
-    const updatedCar = { _id : oldCar._id, createdAt : oldPost.createdAt, numberPlate : numberPlate, info : info };
+    const updatedCar = { _id : oldCar._id, createdAt : oldCar.createdAt, numberPlate : numberPlate, info : info };
 
     // console.log(updatedPost);
 
