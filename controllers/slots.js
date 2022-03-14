@@ -41,7 +41,7 @@ export const createSlot = async (req, res) => {
 
     const Slot = req.body;
 
-    const newSlot = new CarsInfo({ ...Slot })
+    const newSlot = new parkingSlots({ ...Slot })
 
     try {
         await newSlot.save();
